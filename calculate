@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<graphics.h>
+main(){
+int gd=DETECT,gm,a;
+detectgraph(&gd,&gm);
+initgraph(&gd,&gm,"c:\\tc\\bgi\\");
+
+for(a=0;a<570;a++){
+delay(7);
+
+cleardevice();
+setcolor(a);
+circle(150+a,150,70);
+}
+
+
+
+getch();
+
+}
